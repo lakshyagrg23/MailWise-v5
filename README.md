@@ -16,7 +16,7 @@ In addition to organizing emails, MailWise enhances the **email composition** ex
 
 <br>
 
-![image](https://github.com/user-attachments/assets/be6b94dd-61ae-411b-9853-f92b30c2e99b)
+<img width="3197" height="1721" alt="image" src="https://github.com/user-attachments/assets/24b59d5a-ed5a-469c-a876-e209d9a855d6" />
 
 <br>
 
