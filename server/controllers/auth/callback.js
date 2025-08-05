@@ -60,7 +60,7 @@ export const callback = (oauth2Client) => async (req, res) => {
         }
 
         // Redirect with access token, user ID, and name
-        res.redirect(`http://localhost:3000/emails/inbox?access_token=${accessToken}&user_id=${userId}&name=${encodeURIComponent(userName)}&update=${update}`);
+        res.redirect(`${process.env.FRONTEND_URL}/emails/inbox?access_token=${accessToken}&user_id=${userId}&name=${encodeURIComponent(userName)}&update=${update}`);
     } catch (error) {
         console.error("Error during OAuth callback:", error);
         res.status(500).send("Authentication failed");
