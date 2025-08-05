@@ -10,7 +10,18 @@ import pool from './db.js';
 
 
 const app = express();
-app.use(cors({ origin: 'http://localhost:3000', credentials: true }));
+
+// Define an array of allowed origins
+const allowedOrigins = [
+  'http://localhost:3000',
+  'https://main.d2n81lupyovp57.amplifyapp.com'
+];
+
+app.use(cors({
+  origin: allowedOrigins,
+  credentials: true
+}));
+
 app.use(express.json());
 
 
